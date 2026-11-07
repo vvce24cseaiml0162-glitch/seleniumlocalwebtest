@@ -20,6 +20,12 @@ public class LocalLoginTest {
 
     @BeforeMethod
     public void setUp() {
+        // Priority 1: Check project workspace drivers directory
+        File localDriver = new File("drivers/chromedriver.exe");
+        if (localDriver.exists() && System.getProperty("webdriver.chrome.driver") == null) {
+            System.setProperty("webdriver.chrome.driver", localDriver.getAbsolutePath());
+        }
+
         ChromeOptions options = new ChromeOptions();
 
         // Check if headless mode is requested or in CI/Docker environment (default: headless for CI reliability)

@@ -5,6 +5,12 @@ target/
 # TestNG outputs and logs
 test-output/
 surefire-reports/
+*.log
+
+# Execution argument files & drivers
+compile_args.txt
+run_args.txt
+drivers/
 
 # Eclipse / IDE metadata
 .project
@@ -17,6 +23,3 @@ surefire-reports/
 # OS specific files
 Thumbs.db
 .DS_Store
-
-# Temporary log files
-*.log
