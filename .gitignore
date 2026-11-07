@@ -1,0 +1,22 @@
+# Maven build artifacts
+target/
+*.class
+
+# TestNG outputs and logs
+test-output/
+surefire-reports/
+
+# Eclipse / IDE metadata
+.project
+.classpath
+.settings/
+.idea/
+*.iml
+.vscode/
+
+# OS specific files
+Thumbs.db
+.DS_Store
+
+# Temporary log files
+*.log
